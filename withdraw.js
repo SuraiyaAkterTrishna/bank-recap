@@ -6,4 +6,6 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
     const totalWithdrawAmount = updateTotal('withdraw-element', totalWithdrawValue);
     // balance
     const previousBalance = getTextElementValueById('balance-element');
+    const totalBalanceValue = previousBalance - newWithdrawAmount;
+    const totalBalanceAmount = updateTotal('balance-element', totalBalanceValue);
 })
